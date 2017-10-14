@@ -11,6 +11,7 @@ const router = require('./router.js');
 router.setRootPath(__dirname);//设置根目录
 
 router.get('/', function(req, res){
+    // 路由转发
     router.redirect(res, "/view/index.html");
 });////路由转发 不知道是不是这么搞的 反正我只会这个了
 
